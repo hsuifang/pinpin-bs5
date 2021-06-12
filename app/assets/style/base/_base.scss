@@ -1,0 +1,35 @@
+*, *:after, *:before {
+  position: relative;
+  box-sizing: border-box;
+  transition: all 0.1s ease;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+body {
+  font-family: $font-family-sans-serif;
+}
+
+p {
+  line-height: $line-height-base;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img{
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+

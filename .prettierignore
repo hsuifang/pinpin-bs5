@@ -1,0 +1,7 @@
+*.scss
+*.sass
+*.json
+*.spec.js
+*.ejs
+
+gulpfile.js

@@ -1,0 +1,28 @@
+.btn {
+  outline: none;
+  &-primary {
+    color: $link;
+    &:hover {
+      color: white;
+      background-color: $danger;
+      border-color: $danger;
+    }
+  }
+  &-outline-secondary {
+    &:hover {
+      color: $link;
+      background-color: $primary;
+      border-color: $primary;
+      .icon-heart {
+        color: $danger;
+      }
+    }
+  }
+  &-lg {
+    @include media-breakpoint-down(sm) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 1rem;
+    }
+  }
+}
