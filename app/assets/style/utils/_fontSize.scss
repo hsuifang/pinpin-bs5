@@ -1,0 +1,16 @@
+@each $breakpoints in map-keys($grid-breakpoints) {
+  @each $keySize, $value in $font-sizes {
+    $mediaBk: '';
+    @if($breakpoints == 'xs') {
+      $mediaBk: ''
+    }
+    @else {
+      $mediaBk: -#{$breakpoints}
+    }
+    @include media-breakpoint-up($grid-breakpoints) {
+      .fs#{$mediaBk}-#{$keySize} {
+        font-size: $value !important;
+      }
+    }
+  }
+}
